@@ -1,0 +1,530 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+    
+    <!--Designerd by: http://bootstrapthemes.co-->
+    <head>
+        <meta charset="utf-8">
+        <title>Kimberly Tim | 3D Artist</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" href="favicon.ico">
+
+        <!--Google Font link-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Alegreya Sans SC' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Alegreya Sans' rel='stylesheet'>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <!--For Plugins external css-->
+        <!--<link rel="stylesheet" href="assets/css/plugins.css" />-->
+
+        <!--Theme custom css -->
+        
+        <!--<link rel="stylesheet" href="assets/css/colors/maron.css">-->
+
+        <!--Theme Responsive css-->
+        
+
+        
+    </head>
+
+    <style>
+        .container-fluid {
+            /*border: 5px solid yellow;*/
+            padding: 0px;
+        }
+
+        .row, .column {
+            padding: 0px;
+            margin: 0px
+        }
+
+        body {
+            background-color: black
+        }
+
+        /*.row {
+            border: 5px solid red;
+        }
+
+        .column {
+            border: 5px solid blue;
+        }*/
+
+        .top-wallpaper {
+            /*background-attachment: fixed;
+            background-image: url('assets/Earth.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;*/
+        }
+
+        img {
+            width: 100%
+        }
+
+        .site-theme {
+            background-color: #212529;
+            height: 100%
+        }
+
+        .gallery {
+            background-attachment: fixed;
+            background-size: cover;
+            background-image: url('assets/Amarok\'s\ Eye\ 02.png');
+            background-position: center;
+        }
+
+        .intro {
+            margin: 0px;
+        }
+
+        .name {
+            font-style: bold
+        }
+
+        .default-text {
+            font-family: 'Alegreya Sans SC'
+        }
+
+        .text-white {
+            color: white
+        }
+
+        .fa {
+            color: white;
+            font-size: 100px
+        }
+
+        .about-me {
+            background-attachment: fixed;
+            background-image: url('assets/HumanM_08.png');
+            background-size: cover;
+            background-position: center;
+        }
+
+        #about-me {
+            padding-top: 5%;
+            padding-bottom: 10%
+        }
+
+        .footer-wallpaper {
+            background-attachment: fixed;
+            background-image: url('assets/HumanM_08\ \(NO\ HOOD\).png');
+            background-size: cover;
+            background-position: center;
+        }
+
+        #profile {
+            border-radius: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 8%;
+        }
+
+        .gallery-overlay {
+            background-color: rgba(0,0,0,0.8);
+            height: 100%;
+            padding-top: 17%;
+            padding-bottom: 17%
+        }
+
+        .platforms-img {
+            max-height: 100%;
+            margin-left: auto;
+            margin-right: auto
+        }
+
+        .contact-me {
+            /*padding: 100px*/
+        }
+
+        .footer {
+            padding-top: 150px;
+            padding-bottom: 150px;
+        }
+
+        .blender, .photoshop {
+            background-color: rgba(0,0,20,0.8);
+        }
+
+        .text-black {
+            color: black
+        }
+
+        .nav-text {
+            font-family: 'Alegreya Sans';
+            margin: auto;
+            padding-top: 15px;
+            padding-bottom: 15px
+        }
+
+        .navigation {
+            display: flex;
+            height: 60px;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            z-index: 1
+        }
+
+        .bg-video {
+            position: fixed;
+            right: -455px;
+            bottom: 0;
+            z-index: -1;
+            height: 100%;
+            /*width: 100%;*/
+            opacity: 80%
+        }
+
+        .text-white {
+            
+            
+        }
+
+        /*SMALLEST SCREEN*/
+        @media only screen and (max-width: 198px) {
+            #profile {
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        @media only screen and (min-width: 198px) {
+            #profile {
+                height: 150px;
+                width: 150px;
+            }
+        }
+        /* IPHONE SE */
+        @media only screen and (max-width: 767px) {
+            .about-text {
+                font-size: 3.5vw;
+                width: 80%;
+            }
+
+            .nav-text {
+                font-size: 3.5vw
+            }
+
+            .about-title {
+                font-size: 5vw
+            }
+
+            .blender h1, .photoshop h1 {
+                display: none
+            }
+
+            .platforms-img {
+                height: 50px;
+                width: 50px
+            }
+
+            .platform-text {
+                font-size: 7.8vw
+            }
+
+            .platform-description {
+                font-size: 3.8vw
+            }
+
+            .footer-wallpaper {
+                height: 50%;
+            }
+
+            .display-box {
+                margin: 0px;
+                box-shadow: none
+            }
+
+            .blender, .photoshop {
+                padding-top: 0%
+            }
+
+            .contact-email {
+                font-size: 3.5vw
+            }
+
+            #profile {
+                margin-bottom: 8%
+            }
+
+            .intro {
+                padding-top: 60%;
+                padding-bottom: 50%
+            }
+
+            .job {
+                font-size: 5.2vw
+            }
+
+            .name {
+                font-size: 8vw
+            }
+
+            #about-me {
+                background-color: #212529;
+            }
+        }
+
+        .navigation {
+                background-color: rgba(0,0,0,0.85)
+            }
+
+        @media only screen and (min-width: 767px) {
+            .about-text {
+                font-size: 1.2vw;
+                width: 38%;
+            }
+            
+            .nav-text {
+                font-size: 1vw
+            }
+
+            .about-title {
+                font-size: 2.5vw
+            }
+
+            .blender h1, .photoshop h1 {
+                font-size: 3vw;
+                display: block
+            }
+
+            .platforms-img {
+                height: 150px;
+                width: 150px
+            }
+
+            .platform-text {
+                font-size: 1.8vw
+            }
+
+            .platform-description {
+                font-size: 1vw
+            }
+
+            .footer-wallpaper {
+                height: 500px;
+            }
+
+            .display-box {
+                margin: 30px;
+                box-shadow: rgba(15, 78, 137, 0.5) 0px 2px 50px
+            }
+
+            .blender, .photoshop {
+                padding-top: 15%
+            }
+
+            .contact-email {
+                font-size: 1.5vw
+            }
+
+            #profile {
+                margin-bottom: 4%
+            }
+
+            .intro {
+                padding-top: 20%;
+                padding-bottom: 20%
+            }
+
+            .job {
+                font-size: 2.2vw
+            }
+
+            .name {
+                font-size: 5vw
+            }
+
+            #about-me {
+                background-color: rgba(0,0,0,0.5);
+            }
+        }
+
+        @media only screen and (max-width: 820px) {
+            .display-box img {
+                width: 50%
+            }
+        }
+
+        @media only screen and (min-width: 820px) {
+            .display-box img {
+                width: 30%
+            }
+        }
+
+        .gallery-overlay .column {
+            padding-top: 5%;
+            padding-bottom: 5%
+        }
+
+        .about-text {
+            text-align: justify
+        }
+
+        .fa-cube {
+            font-size: 8vw
+        }
+
+        .nav-button {
+            cursor: pointer;
+            display: flex;
+            align-items: center
+        }
+
+        .about-title {
+            color: rgb(150,150,150)
+        }
+    </style>
+
+    <body>
+        <div class="container-fluid">
+            <div class="top">
+                <div class="row navigation justify-content-center site-theme">
+                    <div class="column col-lg-1 col md-2 col-sm-2 nav-button">
+                        <p class="nav-text text-white text-center">HOME</p>
+                    </div>
+                    <div class="column col-lg-1 col md-2 col-sm-2 nav-button">
+                        <p class="nav-text text-white text-center">PORTFOLIO</p>
+                    </div>
+                    <div class="column col-lg-1 col md-2 col-sm-2 nav-button">
+                        <p class="nav-text text-white text-center">ABOUT</p>
+                    </div>
+                    <div class="column col-lg-1 col md-2 col-sm-2 nav-button">
+                        <p class="nav-text text-white text-center">CONTACT</p>
+                    </div>
+                </div>
+                <div class="row top-wallpaper">
+                    <div class="column col-12 top-wallpaper">
+                        <video autoplay loop muted plays-inline class="row bg-video">
+                            <source src="assets/Earth 1k.mp4" type="video/mp4">
+                        </video>
+                        <div class="row intro justify-content-left">
+                            <div class="column col-lg-6 col-md-5 col-sm-12">
+                                <i class="row fa fa-solid fa-cube justify-content-center text-center"></i>
+                                <h1 class="row name default-text justify-content-center text-center text-white">Kimberly Tim</h1>
+                                <p class="row job default-text justify-content-center text-center text-white">3D Artist - Animator - Sound Engineer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="middle">
+                <div class="row gallery site-theme">
+                    <div class="column col-12 gallery-overlay">
+                        <div class="row justify-content-center">
+                            <div class="column col-lg-2 col-md-2 col-sm-12">
+                                <img class="row platforms-img" src="assets/icons8-blender-480.png">
+                                <h4 class="row justify-content-center text-white default-text platform-text">blender</h4>
+                                <p class="row justify-content-center text-white default-text platform-description">Modelling - Texturing - Shading - Rigging</p>
+                            </div>
+                            <div class="column col-lg-2 col-md-2 col-sm-12">
+                                <img class="row platforms-img" src="assets/icons8-photoshop-480.png">
+                                <h4 class="row justify-content-center text-white default-text platform-text">photoshop</h4>
+                                <p class="row justify-content-center text-white default-text platform-description">Digital Art - Graphic Design</p>
+                            </div>
+                            <div class="column col-lg-2 col-md-2 col-sm-12">
+                                <img class="row platforms-img" src="assets/icons8-adobe-after-effects-480.png">
+                                <h4 class="row justify-content-center text-white default-text platform-text">after effects</h4>
+                                <p class="row justify-content-center text-white default-text platform-description">Film - Visual Arts</p>
+                            </div>
+                            <div class="column col-lg-2 col-md-2 col-sm-12">
+                                <img class="row platforms-img" src="assets/icons8-zbrush-480.png">
+                                <h4 class="row justify-content-center text-white default-text platform-text">zbrush</h4>
+                                <p class="row justify-content-center text-white default-text platform-description">Retopology - Modeling</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row blender">
+                    <div class="column col-12">
+                        <h1 class="row text-white text-center justify-content-center" style="font-family: 'Alegreya Sans';text-transform:uppercase;padding-bottom:1%">Showcase</h1>
+                        <div class="row justify-content-center display-box">
+                                <img class='display' src="assets/Amarok's Eye 02.png">
+                                <img class='display' src="assets/Earth.jpg">
+                                <img class='display' src="assets/Smoke & Waters.jpg">
+                                <img class='display' src="assets/HumanM_08.png">
+                                <img class='display' src="assets/HumanM_08 (NO HOOD).png">
+                                <img class='display' src="assets/Amarok's Eye 03.png">
+                                <img class='display' src="assets/144F014C-F9C4-4B50-A4EB-5BA2A0050C93.jpg">
+                                <img class='display' src="assets/07FE9628-D813-4122-BB47-AD13BAEBBFD9.jpg">
+                                <img class='display' src="assets/Autonomous 2 - Copy.png">
+                        </div>
+                    </div>
+                </div>
+                <!--<div class="row photoshop">
+                    <div class="column col-12">
+                        <h1 class="row text-white text-center justify-content-center" style="padding-bottom:50px"></h1>
+                        <div class="row display-box" style="margin:38px">
+                          
+                        </div>
+                    </div>
+                </div>-->
+            </div>
+            <div class="about-me">
+                <div class="row justify-content-center" style="display:block">
+                    <div id='about-me' class="column">
+                        <img class='row justify-content-center' src="assets/IMG_0701.JPG" id="profile">
+                        <div class="row justify-content-center">
+                            <p class="column text-white default-text justify-content-center about-text" style='font-family:Alegreya Sans'>
+                                I am a 3D artist and animator. I enjoy working in the creative field. I touched upon 3D art 5 years ago whereas it
+                                has been an on and off thing but it has been 2 years since when I have gotten very serious in this field. I am working
+                                up to getting better than where I am now in terms of 3D art, which includes animation and realism. I can work on a diverse
+                                style of art, though my main theme is realism.<br><br>
+
+                                As for my background, I am a sound designer for both music and film. I create sounds through recording, sampling, and synthesizers.
+                                I also create 3D art projects which include the use of photoshop and other digital art softwares such as Blender to bring what's imaginable to reality.
+                                These are things that I dedicated myself to until this current day.
+                                I allocate my free time to these activities as there is nothing else more that can bring me this much joy than these two. Furthermore,
+                                I have programming experience and have dedicated my knowledge into creating websites and scripts (for Linux-based machines). I am self-taught, 
+                                alongside learning from courses made by various professional instructors. It wasn't any university that has driven me 
+                                towards constant development. It was my passion.<br><br>
+
+                                Throughout my professional career, I worked in IT and a bit of web development until I discovered that I want to do
+                                more with technology. With the knowledge I have, I'd rather use all of that in the creative arts. In other words, IT
+                                was never my thing. My passion truly lies in creative arts, which includes music and 3D animation.<br><br>
+
+                                I find that my core values truly aligns with these positions.
+                                Overall, I am hoping that someday I can get my foot through the door in the world of 3D art and graphic design.<br><br>
+
+                                Just a side note, some of these projects posted are experimental. 
+                                Eventually, I will post more of my projects in greater quality for this showcase.
+                                That would include not only photos, but also videos.<br><br></p>
+                        </div>
+                        <div class="row justify-content-center contact-me" style="padding-top:50px">
+                            <p class="text-white default-text text-center contact-email">kimberly.tim@kim-tim.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottom" style="background-color: black;">
+                <div class="row footer-wallpaper">
+
+                </div>
+            </div>
+
+            <div class="footer" style="background-color: black;">
+                <p class="row justify-content-center text-white text-center" style="font-size:1vw">Created by Kimberly Tim</p>
+            </div>
+        </div>
+    </body>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+</html>
